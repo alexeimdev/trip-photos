@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    /* font-family: 'Great Vibes', cursive; */
+    scroll-snap-type: y mandatory;
+}
+
+.container {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y mandatory;
+}
+
+.child {
+    scroll-snap-align: start;
+}
+
+.header {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+    background-image: url('./images/italy/venice/IMG_20171008_185121.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/* .header:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .3;
+} */
+
+h1 {
+    margin: 0;
+    margin-left: 5%;
+    font-size: 20vw;
+    color: white;
+}
+
+.main {
+    height: 1000px;
+}
